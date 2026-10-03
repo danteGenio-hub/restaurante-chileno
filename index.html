@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta - Restaurante Típico Chileno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabecera principal -->
+    <header class="site-header">
+        <div class="header-bg-guinalda">
+            <img src="assets/img_logo/guinalda.webp" alt="Guirnalda decorativa" class="bg-guinalda-img">
+        </div>
+
+        <div class="header-bg-letrero">
+            <img src="assets/img_logo/letrero.webp" alt="Fondo Letrero" class="bg-letrero-img">
+        </div>
+
+        <div class="header-overlay-content">
+            <div class="header-left">
+                <img src="assets/img_logo/logo.webp" alt="Logo Restaurante" class="logo-img">
+            </div>
+            
+            <div class="header-right">
+                <img src="assets/img_logo/carreta.webp" alt="Carreta típica" class="header-icon right-icon">
+            </div>
+        </div>
+    </header>
+
+    <!-- Cuerpo del menú con fondo.webp -->
+    <main class="menu-container">
+        <div class="menu-card-wrapper">
+            
+            <!-- Yugo posicionado exactamente en el borde superior -->
+            <div class="yugo-bg-top"></div>
+
+            <!-- Panel blanco principal de la carta -->
+            <div class="menu-overlay">
+                
+                <!-- Barra de Botones de Navegación entre Cartas/Secciones -->
+                <div class="menu-nav-buttons">
+                    <button class="menu-btn active" onclick="mostrarSeccion('platos')">Platos Principales</button>
+                    <button class="menu-btn" onclick="mostrarSeccion('sandwiches')">Sandwiches y Completos</button>
+                    <button class="menu-btn" onclick="mostrarSeccion('beber')">Para Beber</button>
+                </div>
+
+                <!-- SECCIÓN 1: Platos Principales y Especiales -->
+                <section id="seccion-platos" class="menu-section active-section">
+                    <h2 class="menu-title">Platos Principales y Especiales</h2>
+                    
+                    <div class="platos-grid">
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Cazuela de pollo.webp" alt="Cazuela de pollo">
+                            <div class="plato-info">
+                                <h3>Cazuela de pollo</h3>
+                                <p class="precio">$7.990</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Chuleta.webp" alt="Chuleta">
+                            <div class="plato-info">
+                                <h3>Chuleta</h3>
+                                <p class="precio">$6.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Costillar.webp" alt="Costillar">
+                            <div class="plato-info">
+                                <h3>Costillar</h3>
+                                <p class="precio">$9.200</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Filete de pollo.webp" alt="Filete de pollo">
+                            <div class="plato-info">
+                                <h3>Filete de pollo</h3>
+                                <p class="precio">$6.800</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Guatitas jardinera.webp" alt="Guatitas jardinera">
+                            <div class="plato-info">
+                                <h3>Guatitas jardinera</h3>
+                                <p class="precio">$7.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Lazaña boloñesa.webp" alt="Lazaña boloñesa">
+                            <div class="plato-info">
+                                <h3>Lazaña boloñesa</h3>
+                                <p class="precio">$8.000</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Mariscal caliente.webp" alt="Mariscal caliente">
+                            <div class="plato-info">
+                                <h3>Mariscal caliente</h3>
+                                <p class="precio">$9.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Pastel de choclo.webp" alt="Pastel de choclo">
+                            <div class="plato-info">
+                                <h3>Pastel de choclo</h3>
+                                <p class="precio">$8.900</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Pescado frito.webp" alt="Pescado frito">
+                            <div class="plato-info">
+                                <h3>Pescado frito</h3>
+                                <p class="precio">$8.200</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Pollo al coñac.webp" alt="Pollo al coñac">
+                            <div class="plato-info">
+                                <h3>Pollo al coñac</h3>
+                                <p class="precio">$8.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Pollo al horno.webp" alt="Pollo al horno">
+                            <div class="plato-info">
+                                <h3>Pollo al horno</h3>
+                                <p class="precio">$7.200</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Pollo crispy.webp" alt="Pollo crispy">
+                            <div class="plato-info">
+                                <h3>Pollo crispy</h3>
+                                <p class="precio">$7.000</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Platos Principales/Prietas.webp" alt="Prietas">
+                            <div class="plato-info">
+                                <h3>Prietas</h3>
+                                <p class="precio">$6.500</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subcategoría NUEVA: Especiales (Justo abajo de Platos Principales) -->
+                    <h3 style="color: #b31414; margin: 35px 0 15px 0; font-size: 1.4rem; border-bottom: 2px solid #e0d0c0; padding-bottom: 5px;">Especiales de la Casa</h3>
+                    <div class="platos-grid">
+                        
+                        <div class="plato-card">
+                            <img src="assets/Especiales/Bistec a lo pobre.webp" alt="Bistec a lo pobre">
+                            <div class="plato-info">
+                                <h3>Bistec a lo pobre</h3>
+                                <p class="precio">$9.800</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Especiales/Chorrillana .webp" alt="Chorrillana">
+                            <div class="plato-info">
+                                <h3>Chorrillana</h3>
+                                <p class="precio">$8.900</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Especiales/Lomo a lo pobre.webp" alt="Lomo a lo pobre">
+                            <div class="plato-info">
+                                <h3>Lomo a lo pobre</h3>
+                                <p class="precio">$10.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Especiales/Salmón a la plancha.webp" alt="Salmón a la plancha">
+                            <div class="plato-info">
+                                <h3>Salmón a la plancha</h3>
+                                <p class="precio">$10.200</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 2: Sandwiches y Completos -->
+                <section id="seccion-sandwiches" class="menu-section">
+                    <h2 class="menu-title">Sandwiches y Completos Típicos</h2>
+                    
+                    <!-- Subcategoría: Completos -->
+                    <h3 style="color: #b31414; margin: 25px 0 15px 0; font-size: 1.4rem; border-bottom: 2px solid #e0d0c0; padding-bottom: 5px;">Nuestros Completos</h3>
+                    <div class="platos-grid" style="margin-bottom: 30px;">
+                        
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Completos/completo Italiano.webp" alt="Completo Italiano">
+                            <div class="plato-info">
+                                <h3>Completo Italiano</h3>
+                                <p class="precio">$2.800</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Completos/completo aleman.webp" alt="Completo Alemán">
+                            <div class="plato-info">
+                                <h3>Completo Alemán</h3>
+                                <p class="precio">$3.000</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Completos/completo dinamico.webp" alt="Completo Dinámico">
+                            <div class="plato-info">
+                                <h3>Completo Dinámico</h3>
+                                <p class="precio">$3.200</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Completos/completo brasileño.webp" alt="Completo Brasileño">
+                            <div class="plato-info">
+                                <h3>Completo Brasileño</h3>
+                                <p class="precio">$3.100</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Completos/completo napolitano.webp" alt="Completo Napolitano">
+                            <div class="plato-info">
+                                <h3>Completo Napolitano</h3>
+                                <p class="precio">$3.300</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Subcategoría: Sandwiches -->
+                    <h3 style="color: #b31414; margin: 25px 0 15px 0; font-size: 1.4rem; border-bottom: 2px solid #e0d0c0; padding-bottom: 5px;">Sandwiches Típicos</h3>
+                    <div class="platos-grid" style="margin-bottom: 30px;">
+                        
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Sandwiches/Barros Luco.webp" alt="Barros Luco">
+                            <div class="plato-info">
+                                <h3>Barros Luco</h3>
+                                <p class="precio">$5.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Sandwiches/chacarero.webp" alt="Chacarero">
+                            <div class="plato-info">
+                                <h3>Chacarero</h3>
+                                <p class="precio">$5.800</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Sandwiches/Brasileño.webp" alt="Brasileño">
+                            <div class="plato-info">
+                                <h3>Brasileño</h3>
+                                <p class="precio">$5.200</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Sandwiches y Completos/Sandwiches/Brasileño Mechada.webp" alt="Brasileño Mechada">
+                            <div class="plato-info">
+                                <h3>Brasileño Mechada</h3>
+                                <p class="precio">$6.500</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Subcategoría: Papas Fritas -->
+                    <h3 style="color: #b31414; margin: 25px 0 15px 0; font-size: 1.4rem; border-bottom: 2px solid #e0d0c0; padding-bottom: 5px;">Papas Fritas</h3>
+                    <div class="platos-grid">
+                        
+                        <div class="plato-card">
+                            <div class="plato-info" style="padding: 25px 12px;">
+                                <h3>Papas Fritas Solas</h3>
+                                <p class="precio">$3.500</p>
+                                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">Porción crujiente y casera.</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <div class="plato-info" style="padding: 25px 12px;">
+                                <h3>Chorrillana Tradicional</h3>
+                                <p class="precio">$7.990</p>
+                                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">Papas fritas, carne salteada, cebolla frita y huevos.</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <div class="plato-info" style="padding: 25px 12px;">
+                                <h3>Salchipapas</h3>
+                                <p class="precio">$4.800</p>
+                                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">Papas fritas con trozos de vienesa dorada.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 3: Para Beber -->
+                <section id="seccion-beber" class="menu-section">
+                    <h2 class="menu-title">Bebidas y Tragos Tradicionales</h2>
+                    
+                    <div class="platos-grid">
+                        
+                        <div class="plato-card">
+                            <img src="assets/Para Beber/Terremoto.webp" alt="Terremoto">
+                            <div class="plato-info">
+                                <h3>Terremoto</h3>
+                                <p class="precio">$4.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Para Beber/Chicha de Curacaví.webp" alt="Chicha de Curacaví">
+                            <div class="plato-info">
+                                <h3>Chicha de Curacaví</h3>
+                                <p class="precio">$3.200</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <img src="assets/Para Beber/Mote con Huesillo.webp" alt="Mote con Huesillo">
+                            <div class="plato-info">
+                                <h3>Mote con Huesillo</h3>
+                                <p class="precio">$2.500</p>
+                            </div>
+                        </div>
+
+                        <div class="plato-card">
+                            <div class="plato-info" style="padding: 25px 12px;">
+                                <h3>Bebidas / Jugos Naturales</h3>
+                                <p class="precio">$2.000</p>
+                                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">Línea tradicional y jugos de fruta de la estación.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página con imagen sin fondo -->
+    <footer class="site-footer">
+        <div class="footer-banner-container">
+            <img src="assets/img_logo/img_footer.webp" alt="Banner Footer Panorámico" class="footer-banner-img">
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2026 Restaurante Típico Chileno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para cambiar de sección -->
+    <script>
+        function mostrarSeccion(idSeccion) {
+            document.querySelectorAll('.menu-section').forEach(sec => {
+                sec.classList.remove('active-section');
+            });
+            document.querySelectorAll('.menu-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            if (idSeccion === 'platos') {
+                document.getElementById('seccion-platos').classList.add('active-section');
+                event.currentTarget.classList.add('active');
+            } else if (idSeccion === 'sandwiches') {
+                document.getElementById('seccion-sandwiches').classList.add('active-section');
+                event.currentTarget.classList.add('active');
+            } else if (idSeccion === 'beber') {
+                document.getElementById('seccion-beber').classList.add('active-section');
+                event.currentTarget.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>

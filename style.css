@@ -1,0 +1,294 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcf8f2;
+    color: #333;
+}
+
+/* Cabecera Principal */
+.site-header {
+    position: relative;
+    background-color: #b31414;
+    border-bottom: 8px solid #d4af37;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.header-bg-guinalda {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg-guinalda-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.header-bg-letrero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.bg-letrero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.95;
+}
+
+.header-overlay-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.6));
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-icon.right-icon {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.6));
+}
+
+/* Cuerpo del menú con fondo.webp */
+.menu-container {
+    background-image: url('assets/img_logo/fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px 60px 20px;
+    width: 100%;
+}
+
+.menu-card-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Contenedor envolvente de la carta con espacio superior libre */
+.menu-card-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 45px; /* Crea el espacio arriba para alojar el yugo sobresaliente */
+}
+/* Contenedor del yugo optimizado como fondo CSS en el borde superior */
+.yugo-bg-top {
+    position: absolute;
+    top: -75px; /* Sube lo suficiente para que el yugo grande repose exactamente en el borde superior blanco */
+    left: 0;
+    width: 100%;
+    height: 220px; /* Aumentamos la altura para que el gráfico del yugo se expanda y recupere su tamaño imponente */
+    background-image: url('assets/img_logo/yugo.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 15;
+    pointer-events: none;
+    filter: drop-shadow(0px 6px 12px rgba(0,0,0,0.5));
+}
+/* Panel blanco principal de la carta */
+.menu-overlay {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px; /* Padding normal ya que el yugo ahora flota por fuera en el wrapper */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 5;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #8b0000;
+    margin-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px dashed #b31414;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+/* Cuadrícula de platos */
+.platos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.plato-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0d0c0;
+}
+
+.plato-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+/* Ajuste perfecto para evitar cualquier distorsión o estiramiento de las imágenes */
+.plato-card img {
+    width: 100%;
+    height: 160px; /* Altura fija uniforme para todas las tarjetas */
+    object-fit: cover; /* Recorta limpiamente sin deformar las proporciones originales */
+    background-color: #fff; /* Fondo blanco de respaldo por si alguna imagen es transparente */
+    border-bottom: 1px solid #e0d0c0;
+}
+
+.plato-info {
+    padding: 12px;
+    text-align: center;
+}
+
+.plato-info h3 {
+    font-size: 1rem;
+    color: #2c2c2c;
+    margin-bottom: 6px;
+}
+
+.plato-info .precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #b31414;
+}
+
+/* Pie de página */
+.site-footer {
+    background-color: #2b1d14; /* Color base de fondo del footer */
+    color: #fff;
+    text-align: center;
+    padding: 0 0 25px 0;
+    margin-top: 0;
+    border-top: 4px solid #d4af37;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-banner-container {
+    width: 100%;
+    line-height: 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Efecto de fundido transparente en los bordes y la parte inferior de la imagen */
+.footer-banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+    /* Difumina suavemente la parte inferior de la foto para que el fondo se funda con la página */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+    font-size: 0.95rem;
+    color: #ccc;
+    padding: 0 20px;
+}
+
+/* Estilos para la barra de botones de navegación de la carta */
+.menu-nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.menu-btn {
+    background-color: #f4ede2;
+    color: #5c1818;
+    border: 2px solid #b31414;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-btn:hover {
+    background-color: #b31414;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.menu-btn.active {
+    background-color: #b31414;
+    color: #fff;
+    border-color: #d4af37;
+    box-shadow: 0 4px 12px rgba(179,20,20,0.4);
+}
+
+/* Control de visualización de secciones de la carta */
+.menu-section {
+    display: none; /* Ocultas por defecto */
+}
+
+.menu-section.active-section {
+    display: block; /* Muestra únicamente la sección activa */
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
